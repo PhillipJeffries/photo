@@ -1,0 +1,66 @@
+@import "./media_mixins.scss";
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  li{
+    padding: 0;
+  }
+}
+
+a{
+  text-decoration: none;
+}
+
+$width: 55px;
+
+$font-basic: Roboto;
+$font-secondary: 'Palette Mosaic';
+$font-third: 'SpecialElite';
+
+$padding-vert: 4vh;
+
+$padding-hor: 4vw;
+
+@mixin page-padding-vertical {
+  padding-top: $padding-vert;
+  padding-bottom: $padding-vert;
+}
+
+@mixin page-padding-horizontal {
+  padding-left: $padding-hor;
+  padding-right: $padding-hor;
+}
+
+
+@mixin large-text {
+  font-size: 55px;
+  font-weight: bold;
+}
+  
+@mixin text-shadow {
+  text-shadow: -2px 3px 1px rgba(0, 0, 0, 0.336);
+  
+}
+
+@mixin text-shadow-hover {
+  text-shadow: -6px 6px 3px rgba(0, 0, 0, 0.25);
+  
+}
+
+
+@mixin container-padding {
+    padding: 32px 64px;
+    @include media-tablet {
+      padding: 16px 32px;
+    }
+}
+
+
+
