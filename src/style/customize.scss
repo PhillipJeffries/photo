@@ -1,8 +1,27 @@
 @import "./media_mixins.scss";
 
+$width: 55px;
+
+$font-basic: Cormorant-Infant;
+$font-secondary: 'Palette Mosaic';
+$font-third: 'SpecialElite';
+
+$padding-vert: 4vh;
+
+$padding-hor: 4vw;
+
+
+@mixin cormorantBold {
+  font-family: Cormorant-Infant;
+  font-weight: 700;
+}
+
+
 body{
   padding: 0;
   margin: 0;
+  font-family: $font-basic;
+
 }
 
 ul {
@@ -18,15 +37,7 @@ a{
   text-decoration: none;
 }
 
-$width: 55px;
 
-$font-basic: Roboto;
-$font-secondary: 'Palette Mosaic';
-$font-third: 'SpecialElite';
-
-$padding-vert: 4vh;
-
-$padding-hor: 4vw;
 
 @mixin page-padding-vertical {
   padding-top: $padding-vert;
